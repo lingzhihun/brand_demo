@@ -1,0 +1,12 @@
+D:\java\brand_demo\src\main\java\coma\service\BrandService.java
+D:\java\brand_demo\src\main\java\coma\mapper\BrandMapper.java
+D:\java\brand_demo\src\main\java\coma\mapper\UserMapper.java
+D:\java\brand_demo\src\main\java\coma\web\SelectByIdServlet.java
+D:\java\brand_demo\src\main\java\coma\util\SqlSessionFactoryUtils.java
+D:\java\brand_demo\src\main\java\coma\web\LoginServlet.java
+D:\java\brand_demo\src\main\java\coma\service\UserService.java
+D:\java\brand_demo\src\main\java\coma\pojo\User.java
+D:\java\brand_demo\src\main\java\coma\pojo\Brand.java
+D:\java\brand_demo\src\main\java\coma\web\AddServlet.java
+D:\java\brand_demo\src\main\java\coma\web\UpdateServlet.java
+D:\java\brand_demo\src\main\java\coma\web\SelectAllServlet.java

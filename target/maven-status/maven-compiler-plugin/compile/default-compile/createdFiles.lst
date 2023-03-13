@@ -1,0 +1,12 @@
+coma\web\SelectAllServlet.class
+coma\mapper\BrandMapper.class
+coma\util\SqlSessionFactoryUtils.class
+coma\web\UpdateServlet.class
+coma\web\LoginServlet.class
+coma\pojo\User.class
+coma\web\SelectByIdServlet.class
+coma\service\UserService.class
+coma\web\AddServlet.class
+coma\mapper\UserMapper.class
+coma\service\BrandService.class
+coma\pojo\Brand.class
