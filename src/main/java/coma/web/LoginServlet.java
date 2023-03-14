@@ -1,17 +1,13 @@
 package coma.web;
 
-import coma.pojo.Brand;
 import coma.pojo.User;
-import coma.service.BrandService;
 import coma.service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.List;
 
 @WebServlet("/LoginServlet")
@@ -22,18 +18,32 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String username = request.getParameter("username");
+        username = URLEncoder.encode(username, "utf-8");
         String password = request.getParameter("password");
+        String remember = request.getParameter("remember");
 
         User user = service.login(username,password);
 
         if(user !=null){
+
+            if("1".equals(remember)){
+
+                Cookie cookie_username = new Cookie("username",username);
+                Cookie cookie_password = new Cookie("password",password);
+                cookie_password.setMaxAge(60*60*7*24);
+                cookie_username.setMaxAge(60*60*7*24);
+                response.addCookie(cookie_password);
+                response.addCookie(cookie_username);
+            }
+
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
             String contextPath = request.getContextPath();
             System.out.println("contextpath:" + contextPath );
             response.sendRedirect(contextPath + "/SelectAllServlet");
         }else {
-
+            request.setAttribute("login_msg","用户登陆失败");
+            request.getRequestDispatcher("/login.jsp").forward(request,response);
         }
     }
 

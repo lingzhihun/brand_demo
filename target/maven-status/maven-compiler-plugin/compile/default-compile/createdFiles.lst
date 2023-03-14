@@ -1,8 +1,10 @@
 coma\web\SelectAllServlet.class
 coma\mapper\BrandMapper.class
 coma\util\SqlSessionFactoryUtils.class
+coma\web\RegisterServlet.class
 coma\web\UpdateServlet.class
 coma\web\LoginServlet.class
+coma\web\CheckCodeServlet.class
 coma\pojo\User.class
 coma\web\SelectByIdServlet.class
 coma\service\UserService.class
