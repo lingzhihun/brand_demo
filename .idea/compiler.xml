@@ -9,5 +9,8 @@
         <module name="brand_demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ajaxDemo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

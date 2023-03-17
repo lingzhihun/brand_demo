@@ -1,6 +1,8 @@
+coma\web\AjaxServlet.class
 coma\web\SelectAllServlet.class
 coma\mapper\BrandMapper.class
 coma\util\SqlSessionFactoryUtils.class
+coma\web\SelectUserServlet.class
 coma\web\RegisterServlet.class
 coma\web\UpdateServlet.class
 coma\web\LoginServlet.class
@@ -9,6 +11,8 @@ coma\pojo\User.class
 coma\web\SelectByIdServlet.class
 coma\service\UserService.class
 coma\web\AddServlet.class
+coma\web\filter\LoginFilter.class
 coma\mapper\UserMapper.class
 coma\service\BrandService.class
 coma\pojo\Brand.class
+coma\web\ContextLoaderListener.class
