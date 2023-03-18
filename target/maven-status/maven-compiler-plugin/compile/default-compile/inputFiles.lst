@@ -8,6 +8,7 @@ D:\java\brand_demo\src\main\java\coma\web\ContextLoaderListener.java
 D:\java\brand_demo\src\main\java\coma\web\AjaxServlet.java
 D:\java\brand_demo\src\main\java\coma\web\RegisterServlet.java
 D:\java\brand_demo\src\main\java\coma\web\filter\LoginFilter.java
+D:\java\brand_demo\src\main\java\coma\web\AxiosServlet.java
 D:\java\brand_demo\src\main\java\coma\pojo\Brand.java
 D:\java\brand_demo\src\main\java\coma\service\BrandService.java
 D:\java\brand_demo\src\main\java\coma\web\SelectUserServlet.java

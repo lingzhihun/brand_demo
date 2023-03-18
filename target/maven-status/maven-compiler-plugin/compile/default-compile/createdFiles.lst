@@ -5,6 +5,7 @@ coma\util\SqlSessionFactoryUtils.class
 coma\web\SelectUserServlet.class
 coma\web\RegisterServlet.class
 coma\web\UpdateServlet.class
+coma\web\AxiosServlet.class
 coma\web\LoginServlet.class
 coma\web\CheckCodeServlet.class
 coma\pojo\User.class
