@@ -24,7 +24,8 @@ public class LoginFilter implements Filter {
         User user = (User) session.getAttribute("user");
 
         String[] urls = {"/login.jsp","/CheckCodeServlet","/LoginServlet","/RegisterServlet",
-                "/register.jsp", "/imgs/","/css/","/ajaxDemo.html","/AjaxServlet","/register.html","/SelectUserServlet"};
+                "/register.jsp", "/imgs/","/css/","/ajaxDemo.html","/AjaxServlet","/register.html","/SelectUserServlet"
+                ,"/axiosDemo.html","/AxiosServlet","/axios-demo.html","/jss/"};
         String url = req.getRequestURI().toString();
 
         for(String u: urls){

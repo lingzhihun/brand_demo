@@ -61,16 +61,17 @@
             xhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
 
-        xhttp.open("GET","https://localhost:8080/brand_demo/SelectUserServlet?username="+username);
+        xhttp.open("GET","http://localhost:8080/brand_demo/SelectUserServlet?username="+username);
         xhttp.send();
 
-        console.log(this.responseText );
+
         xhttp.onreadystatechange = function (){
+            // alert(this.responseText);
             if (this.readyState == 4 && this.status == 200){
                 if(this.responseText == "true"){
                     document.getElementById("username_err").style.display = '';
                 }else{
-                    document.getElementById("username_err").style.display = 'none';
+                    document.getElementById("username_err").style.display = '';
                 }
             }
         }
